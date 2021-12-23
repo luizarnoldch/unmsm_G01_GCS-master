@@ -1,0 +1,60 @@
+<div class="container-fluid login">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-12 col-lg-6 d-lg-flex d-none">
+                <img src="images/login/login_image_1.png" alt="">
+            </div>
+            <div class="col-12 col-lg-6">
+                <div class="card card-login mx-auto px-lg-4">
+                    <div class="card-body text-center">
+                        <h2>Iniciar Sesión</h2>
+                        <h3>¡Bienvenido!</h3>
+                        <form action="/ingreso" method="POST">
+                            <div class="form-row align-items-center">
+                                <div class="col-12">
+                                    <div class="input-group mb-2">
+                                        <div class="input-group-prepend">
+                                            <div class="input-group-text">
+                                                <img src="images/login/user.png" alt="correo" height="32px" width="32px">
+                                            </div>
+                                        </div>
+                                        <input type="email" class="form-control py-2" id="mailC" name="mailC" placeholder="CORREO ELECTRONICO">
+                                    </div>
+                                </div>
+
+                                <div class="col-12">
+                                    <div class="input-group mb-2">
+                                        <div class="input-group-prepend">
+                                            <div class="input-group-text">
+                                                <img src="images/login/lock.png" alt="Contraseña" height="32px" width="32px">
+                                            </div>
+                                        </div>
+                                        <input type="text" class="form-control py-2" id="pass" name="pass" placeholder="CONTRASEÑA">
+                                    </div>
+                                </div>
+
+                                <div class="col-12 form-inline justify-content-between">
+                                    <div class="form-check mb-2">
+                                        <input class="form-check-input" type="checkbox" id="autoSizingCheck">
+                                        <label class="form-check-label" for="autoSizingCheck">
+                                        Recordar
+                                        </label>
+                                    </div>
+                                    <div class="mx-auto mx-sm-0 mb-1 form-text">
+                                        <p><a href="/recuperar-pass">recuperar contraseña</a></p>
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <button type="submit" class="btn btn-principal mb-2 col-12 p-2">INGRESAR</button>
+                                    <div class="text-center mb-1 form-text">
+                                        <p>no tengo cuenta, <a href="/registro">quiero registrarme</a></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

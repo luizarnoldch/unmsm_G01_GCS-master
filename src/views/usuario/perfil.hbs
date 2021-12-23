@@ -1,0 +1,61 @@
+<div class="container-fluid register">
+    <div class="row">
+        <div class="col-12">
+            <div class="card my-5" style="min-height: 80vh;">
+                <h3 class="text-center" style="font-weight: bold;">Perfil</h3>
+                <form class="my-1" action="/perfil" method="POST">
+                    <div class="form-row align-items-center justify-content-around text-center text-md-left">
+                        <div class="offset-md-1 col-12 col-md-11 form-group mb-2" style="margin: 0px 0px 0px 35px;">
+                            <label for="email" style="font-weight: bold; font-size:20px;">Datos Personales:</label>
+                        </div> 
+
+                        <div class="col-10 col-md-4 form-group mb-4">
+                            <label for="name">Nombre:   {{info.nomC}}</label>
+                        </div>
+
+                        <div class="offset-md-1 col-10 col-md-4 form-group mb-4">
+                            <label for="last_one_name">DNI:   {{info.dniC}}</label>
+                            
+                        </div>
+
+                        <div class="col-10 col-md-4 form-group mb-4">
+                            <label for="last_two_name">Apellido parterno:   {{info.apeC}}</label>
+                        </div>
+
+                        <div class="offset-md-1 col-10 col-md-4 form-group mb-4">
+                            <label for="dni">Correo Electrónico:   {{usuario.mailC}}</label>
+                        </div>
+
+                        <div class="col-10 col-md-4 form-group mb-4">
+                            <label for="phone">Apellido Materno:   {{info.apeC2}}</label>
+                        </div>
+
+                        <div class="offset-md-1 col-10 col-md-4 form-group mb-4">
+                            <label for="email">Celular:   {{info.telfC}}</label>
+                        </div>
+
+                        <div class="offset-md-1 col-12 col-md-11 form-group mb-2" style="margin: 0px 0px 0px 35px;">
+                            <label for="email" style="font-weight: bold; font-size:20px;">Tallas:</label>
+                        </div>  
+
+                        <div class="col-10 col-md-2 form-group mb-4" style="margin: 0px 50px 0px 60px;">
+                            <label for="number">Busto: {{tamaño.busto}} cm</label>
+                        </div>
+
+                        <div class="offset-md-1 col-10 col-md-3 form-group mb-3" style="margin: 0px 0px 0px 50px;">
+                            <label for="number">Cintura: {{tamaño.cintura}} cm</label>
+                        </div>
+
+                        <div class="col-10 col-md-3 form-group mb-3" style="margin: 0px 50px 0px 60px;">
+                            <label for="number">Cadera: {{tamaño.cadera}} cm</label>
+                        </div>
+
+                        <div class="col-12 text-center mt-1">
+                            <button type="submit" class="btn btn-principal mb-1 col-md-5 col-7 py-2"><a href="/perfil/editar/{{cliente.id}}">EDITAR CAMBIOS</a></button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>

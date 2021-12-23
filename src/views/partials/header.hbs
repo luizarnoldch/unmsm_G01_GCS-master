@@ -1,0 +1,268 @@
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <button
+    class="btn"
+    type="button"
+    data-toggle="collapse"
+    data-target="#sidebarCollapse"
+  ><img src="images/navbar/boton_desplegable.png" alt="" /></button>
+
+  <div class="collapse menu-lateral" id="sidebarCollapse">
+    <div class="card card-body text-light px-5">
+      <div class="py-3">
+        <a type="button" data-toggle="collapse" data-target="#sidebarCollapse">
+          <img class="p-2" src="images/lateral-menu/icon_volver.png" alt="" />
+          <p class="d-inline-block">Volver</p>
+        </a>
+      </div>
+      <div class="py-3">
+        <a href="/polos">
+          <img class="p-2" src="images/lateral-menu/Vector 6.png" alt="" />
+          <p class="d-inline-block">Polos</p>
+        </a>
+      </div>
+      <div class="py-3">
+        <a href="/faldas">
+          <img class="p-2" src="images/lateral-menu/Vector 7.png" alt="" />
+          <p class="d-inline-block">Faltas</p>
+        </a>
+      </div>
+      <div class="py-3">
+        <a href="/jeans">
+          <img class="p-2" src="images/lateral-menu/Vector 8.png" alt="" />
+          <p class="d-inline-block">Jeans</p>
+        </a>
+      </div>
+      <div class="py-3">
+        <a href="/chompas">
+          <img class="p-2" src="images/lateral-menu/Vector 9.png" alt="" />
+          <p class="d-inline-block">Chompas</p>
+        </a>
+      </div>
+      <div class="py-3">
+        <a href="/casacas">
+          <img class="p-2" src="images/lateral-menu/Vector 10.png" alt="" />
+          <p class="d-inline-block">Casacas</p>
+        </a>
+      </div>
+      <div class="py-3">
+        <a href="/vestidos">
+          <img class="p-2" src="images/lateral-menu/Vector 6.png" alt="" />
+          <p class="d-inline-block">Vestidos</p>
+        </a>
+      </div>
+      <div class="py-3">
+        <a href="/blusas">
+          <img class="p-2" src="images/lateral-menu/Vector 6.png" alt="" />
+          <p class="d-inline-block">Blusas</p>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <div class="collapse carrito" id="carrito">
+    <div class="card card-body text-light px-5">
+      <div class="py-3">
+        <a type="button" data-toggle="collapse" data-target="#carrito">
+          <img src="images/navbar/icon_volver.png" alt="" />
+        </a>
+        <h5 class="text-dark d-inline">Carrito de compras</h5>
+      </div>
+
+      <div class="item">
+        <div class="row">
+          <div class="col-6 align-self-center">
+            <img src="images/index/ropa4.png" alt="" height="150" />
+          </div>
+          <div class="col-6 text-dark align-self-center">
+            <p class="m-0">BLUE</p>
+            <div class="d-inline-flex">
+              <div
+                class="mx-1"
+                style="background-color: red; width: 30px; height: 30px; border-radius: 50%; border: 1px solid black"
+              ></div>
+              <div
+                class="text-center mx-1"
+                style="width: 30px; height: 30px; border-radius: 50%; border: 1px solid black;"
+              >S</div>
+            </div>
+            <div class="d-inline-flex">
+              <button class="btn btn-principal">S/. 40.00</button>
+              <button class="btn btn-secondary">Quitar</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row justify-content-center m-3">
+      <button class="btn btn-light m-2">TOTAL: S/. 40.00</button>
+      <button class="btn btn-dark m-2">Comprar</button>
+    </div>
+  </div>
+
+  <a class="navbar-brand navbar-title" href="/">MM&P</a>
+  <button
+    class="navbar-toggler"
+    type="button"
+    data-toggle="collapse"
+    data-target="#navbarSupportedContent"
+    aria-controls="navbarSupportedContent"
+    aria-expanded="false"
+    aria-label="Toggle navigation"
+  >
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse text-center" id="navbarSupportedContent">
+    <form class="form-inline my-2 my-lg-0">
+      <div class="input-group mb-2">
+        <div class="input-group-prepend">
+          <button
+            class="btn input-group-text"
+            style="background-color: white; border-radius: 30px 0 0 30px"
+          ><img src="images/navbar/lupa.png" alt="" /></button>
+        </div>
+        <input
+          type="text"
+          class="form-control"
+          id="inlineFormInputGroup"
+          placeholder="¿QUÉ DESEAS BUSCAR?"
+          style="height: 40px; border-radius: 0 30px 30px 0; background-color: #f2f2f2"
+        />
+      </div>
+    </form>
+    <ul class="navbar-nav ml-auto">
+      <li class="nav-item">
+        <a
+          class="nav-link"
+          type="button"
+          data-toggle="collapse"
+          data-target="#filtrar"
+        >
+          <img src="images/navbar/navbar_tag.png" alt="Comprar" />
+        </a>
+      </li>
+
+      {{#if user}}
+        <li class="nav-item dropdown">
+          <a
+            class="nav-link dropdown-toggle"
+            href="#"
+            id="navbarDropdown"
+            role="button"
+            data-toggle="dropdown"
+            aria-haspopup="true"
+            aria-expanded="false"
+          >
+            <img src="images/navbar/navbar_user.png" alt="Iniciar sesion" />
+            Perfil
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="/perfil">Perfil</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="/salir">Cerrar sesion</a>
+          </div>
+        </li>
+      {{else}}
+        <li class="nav-item">
+          <a class="nav-link" href="/ingreso">
+            <img src="images/navbar/navbar_user.png" alt="Iniciar sesion" />
+            Iniciar Sesion
+          </a>
+        </li>
+      {{/if}}
+      <li class="nav-item">
+        <a
+          class="nav-link"
+          type="button"
+          data-toggle="collapse"
+          data-target="#carrito"
+        >
+          <img src="images/navbar/navbar_car.png" alt="Carrito de compras" />
+          Carrito de Compras
+        </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">
+          <img src="images/navbar/navbar_heart.png" alt="Mis favoritos" />
+          Mis Favoritos
+        </a>
+      </li>
+    </ul>
+  </div>
+</nav>
+
+<div
+  class="collapse filtrar"
+  id="filtrar"
+  style="position: absolute; width: 550px"
+>
+  <div class="card card-body" style="border-radius: 0 30px 30px 0">
+    <form action="" method="POST">
+      <input type="checkbox" class="btn-check" id="formal" autocomplete="off" />
+      <label class="btn" for="formal">Formal</label>
+
+      <input type="checkbox" id="informal" class="btn-check" /><label
+        for="informal"
+        class="btn"
+      >Informal</label><input
+        type="checkbox"
+        id="casual"
+        class="btn-check"
+      /><label for="casual" class="btn">Casual</label><input
+        type="checkbox"
+        id="coctel"
+        class="btn-check"
+      /><label for="coctel" class="btn">Coctel</label><input
+        type="checkbox"
+        id="Gala"
+        class="btn-check"
+      /><label for="Gala" class="btn">Gala</label>
+      <br /><input type="checkbox" id="De Campo" class="btn-check" /><label
+        for="De Campo"
+        class="btn"
+      >De Campo</label><input
+        type="checkbox"
+        id="Vintage"
+        class="btn-check"
+      /><label for="Vintage" class="btn">Vintage</label><input
+        type="checkbox"
+        id="Noche De Pijamada"
+        class="btn-check"
+      /><label for="Noche De Pijamada" class="btn">Noche De Pijamada</label><br
+      /><input type="checkbox" id="Otaku" class="btn-check" /><label
+        for="Otaku"
+        class="btn"
+      >Otaku</label><input
+        type="checkbox"
+        id="Oscuro"
+        class="btn-check"
+      /><label for="Oscuro" class="btn">Oscuro</label><input
+        type="checkbox"
+        id="Romantico"
+        class="btn-check"
+      /><label for="Romantico" class="btn">Romantico</label><input
+        type="checkbox"
+        id="Pascuas"
+        class="btn-check"
+      /><label for="Pascuas" class="btn">Pascuas</label><input
+        type="checkbox"
+        id="Boda"
+        class="btn-check"
+      /><label for="Boda" class="btn">Boda</label><input
+        type="checkbox"
+        id="Fiesta"
+        class="btn-check"
+      /><label for="Fiesta" class="btn">Fiesta</label><input
+        type="checkbox"
+        id="Navidad"
+        class="btn-check"
+      /><label for="Navidad" class="btn">Navidad</label><input
+        type="checkbox"
+        id="Año Nuevo"
+        class="btn-check"
+      /><label for="Año Nuevo" class="btn">Año Nuevo</label>
+      <br />
+      <button class="btn btn-principal">Aplicar</button>
+    </form>
+  </div>
+</div>

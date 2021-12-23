@@ -1,0 +1,30 @@
+<div class="container-fluid register">
+    <div class="row align-items-center justify-content-center">
+        <div class="col-8 justify-content-center">
+            <div class="card my-4">
+                <h3 class="text-center">Cambio de contraseña</h3>
+                <form class="my-1" action="/registro" method="POST">
+                    <div class="form-row align-items-center justify-content-around">
+
+                        <div class="col-10 col-md-10 form-group mb-4">
+                            <label for="email">Email:</label>
+                            <input type="email" class="form-control py-2" name="mailC" id="mailC" placeholder="INGRESE SU CORREO ELECTRÓNICO">
+                        </div>
+                    </div>
+
+                    <div class="form-row align-items-center justify-content-around">
+
+                        <div class="col-10 col-md-10 form-group mb-4">
+                            <label for="email">Confirmar Nueva Contraseña:</label>
+                            <input type="email" class="form-control py-2" name="pass" id="pass" placeholder="INGRESE SU NUEVA CONTRASEÑA">
+                        </div>
+
+                        <div class="col-12 text-center">
+                            <button id="cambio-pass" type="submit" class="btn btn-principal mb-1 col-md-4 col-7 py-2 my-3"><a href="/ingreso" >Cambiar contraseña</a></button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>

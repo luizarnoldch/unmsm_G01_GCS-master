@@ -1,0 +1,75 @@
+<div class="container-fluid register">
+    <div class="row">
+        <div class="col-12">
+            <div class="card my-5">
+                <h3 class="text-center">EDITAR PERFIL</h3>
+                <form class="my-1" action="/perfil/editar/{{cliente.id}}" method="POST">
+                    <div class="form-row align-items-center justify-content-around">
+                        <div class="col-10 col-md-4 form-group mb-4">
+                            <label for="name">Nombre:</label>
+                            <input type="text" class="form-control py-2" id="nomC" name="nomC" placeholder="INGRESE SU NOMBRE" value="{{info.nomC}}">
+                        </div>
+
+                        <div class="offset-md-1 col-10 col-md-4 form-group mb-4">
+                            <label for="last_one_name">Apellido Paterno:</label>
+                            <input type="text" class="form-control py-2" id="apeC" name="apeC" placeholder="INGRESE SU APELLIDO PATERNO" value="{{info.apeC}}">
+                        </div>
+
+                        <div class="col-10 col-md-4 form-group mb-4">
+                            <label for="last_two_name">Apellido Materno:</label>
+                            <input type="text" class="form-control py-2" id="apeC2" name="apeC2"  placeholder="INGRESE SU APELLIDO MATERNO" value="{{info.apeC2}}">
+                        </div>
+
+                        <div class="offset-md-1 col-10 col-md-4 form-group mb-4">
+                            <label for="dni">DNI:</label>
+                            <input type="number" class="form-control py-2" id="dniC" name="dniC"  placeholder="INGRESE SU DNI" value="{{info.dniC}}">
+                        </div>
+
+                        <div class="col-10 col-md-4 form-group mb-4">
+                            <label for="phone">Celular:</label>
+                            <input type="number" class="form-control py-2" id="telfC" name="telfC"  placeholder="INGRESE SU CELULAR" value="{{info.telfC}}">
+                        </div>
+
+                        <div class="offset-md-1 col-10 col-md-4 form-group mb-4">
+                            <label for="email">Correo Electrónico:</label>
+                            <input type="email" class="form-control py-2" id="mailC" name="mailC" placeholder="INGRESE SU CORREO ELECTRÓNICO" value="{{info.nomC}}">
+                        </div>
+
+                        <div class="offset-md-1 col-12 col-md-11 form-group mb-12" style="margin: 0px 0px 0px 35px;">
+                            <label for="email">Ingresa tus datos(Cm):</label>
+                        </div>  
+
+                        <div class="col-10 col-md-2 form-group mb-4" style="margin: 0px 50px 0px 60px;">
+                            <label for="number">Busto:</label>
+                            <input type="number" class="form-control py-2" id="busto" name="busto" placeholder="BUSTO">
+                        </div>
+
+                        <div class="offset-md-1 col-10 col-md-2 form-group mb-3" style="margin: 0px 0px 0px 50px;">
+                            <label for="number">Cintura:</label>
+                            <input type="number" class="form-control py-2" id="cintura" name="cintura" placeholder="CINTURA">
+                        </div>
+
+                        <div class="col-10 col-md-2 form-group mb-3" style="margin: 0px 50px 0px 60px;">
+                            <label for="number">Cadera:</label>
+                            <input type="number" class="form-control py-2" id="cadera" name="cadera" placeholder="CADERA">
+                        </div>
+
+                        <div class="col-10 col-md-4 form-group mb-4">
+                            <label for="password">Contraseña:</label>
+                            <input type="password" class="form-control py-2" id="pass" name="pass" placeholder="INGRESE SU CONTRASEÑA">
+                        </div>
+
+                        <div class="offset-md-1 col-10 col-md-4 form-group mb-4">
+                            <label for="confirm_password">Confirmar Contraseña:</label>
+                            <input type="confirm_password" class="form-control py-2" id="pass1" name="pass1"  placeholder="CONFIRMAR LA CONTRASEÑA">
+                        </div>
+                        
+                        <div class="col-12 text-center mt-1">
+                            <button type="submit" class="btn btn-principal mb-1 col-md-5 col-7 py-2">GUARDAR CAMBIOS</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
